@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="module" src="./script.js" defer></script>
+  </head>
+  <body>
+    <address class="my__data">
+      <h1 class="logo">LUBAYAXUINJA</h1>
+      <div class="person">
+        <img class="icon" src="./pictures/download 1.png" alt="icon" />
+        <p class="my__name">Shota</p>
+        <a class="my__email" href="mailto:sany_snow@mail.ru"
+          >sany_snow@mail.ru</a
+        >
+      </div>
+      <p class="create__date">
+        <img
+          class="calendar"
+          src="./pictures/calendar-line.png"
+          alt="calendar icon"
+        />2024-06-09
+      </p>
+      <p class="number">
+        <img
+          class="phone__icon"
+          src="./pictures/Vector.png"
+          alt="phone icon"
+        />+79770035275
+      </p>
+    </address>
+
+    <div class="container">
+      <header>
+        <h2>Address book</h2>
+        <form id="form">
+          <button class="search">Search</button>
+          <input class="search__input" type="search" />
+        </form>
+        <form id="gend">
+          <label class="gender__lb" for="gender-select">gender</label>
+          <select name="gender" id="gender-select">
+            <option value="">-- Chouse yor gender --</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="not chosen">Not chosen</option>
+          </select>
+        </form>
+        <button class="sort">Sort</button>
+        <button class="new__contact">New contact ⨁</button>
+      </header>
+      <div class="contact__wrapper">
+        <div class="all__contacts">
+          <ul class="contact__list">
+            <!-- <li id="1" class="contact__data">
+              <img
+                class="contact__photo"
+                src="./pictures/Avatar.png"
+                alt="avatar"
+              />
+              <div class="data__wrapper">
+                <div class="initials">
+                  <p class="name">Curt</p>
+                  <p class="surname">Cobain</p>
+                </div>
+                <p class="about">Java developer</p>
+              </div>
+              <p class="gender">mail</p>
+              <p class="phone">0706312495</p>
+              <p class="mail"><a class="data__mail" href="mailto:kurtcobain@gmail.com">kurtcobain@gmail.com</a></p>
+            </li> -->
+          </ul>
+        </div>
+        <div class="edit__contact">
+          <div class="contact__person">
+            <img class="icon" src="./pictures/Avatar.png" alt="icon" />
+            <p class="contact__name">Shota</p>
+            <p class="contact__status">Best friend</p>
+          </div>
+          <button class="editor">Edit contact</button>
+          <div class="item">
+            <p class="edit__item">
+              <span class="edit__mark">Phone number</span>+9770035275
+            </p>
+            <img class="item__picture" src="./pictures/phone-fill.png" alt="" />
+          </div>
+          <div class="item">
+            <p class="edit__item">
+              <span class="edit__mark">Email Address</span
+              ><a href="mailti:sany_snow@mail.ru">sany_snow@mail.ru</a>
+            </p>
+            <img class="item__picture" src="./pictures/Vector(1).png" alt="" />
+          </div>
+          <div class="item">
+            <p class="edit__item">
+              <span class="edit__mark">Date of create</span>2024-06-09
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <dialog class="modal">
+      <div class="modal__inner">
+        <h2>Add new contact</h2>
+        <form id="form" class="modal__form">
+          <div>
+            <label class="search green__button">About</label>
+            <input class="modal__input" type="text" />
+          </div>
+          <div class="modal__form">
+            <lable class="search green__button">Name</lable>
+            <input class="modal__input" type="text" />
+          </div>
+          <div class="modal__form">
+            <label class="search green__button">Surname</label>
+            <input class="modal__input" type="text" />
+          </div>
+          <div class="modal__form">
+            <label class="search green__button">Phone</label>
+            <input class="modal__input" type="text" />
+          </div>
+          <div class="modal__form">
+            <label class="search green__button">Email</label>
+            <input class="modal__input" type="text" />
+          </div>
+        </form>
+        <form id="gend">
+          <label class="gender__lb" for="gender-select">gender</label>
+          <select name="gender" id="gender-select">
+            <option value="">-- Chouse yor gender --</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="not chosen">Not chosen</option>
+          </select>
+        </form>
+
+        <button class="modal__add">⨁ Add new contact</button>
+        <!-- <button class="close__modal">close</button> -->
+      </div>
+    </dialog>
+  </body>
+</html>

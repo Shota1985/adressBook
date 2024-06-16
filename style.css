@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1600px;
+  display: flex;
+}
+.my__data {
+  width: 378px;
+  height: 800px;
+}
+header {
+  display: flex;
+  align-items: center;
+  width: 1134px;
+  height: 138px;
+}
+h2 {
+  margin: 35px;
+  font-size: 24px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  cursor: pointer;
+  margin: 10px;
+  height: 42px;
+  background-color: #5abb5e;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.search,
+.green__button {
+  position: absolute;
+  width: 91px;
+  bottom: -11px;
+  left: -13px;
+}
+.gender__btn {
+  width: 85px;
+}
+.new__contact {
+  width: 140px;
+}
+.editor {
+  margin-top: 70px;
+  width: 328px;
+}
+.sort {
+  width: 76px;
+}
+.search__input,
+.modal__input {
+  border-style: none;
+  background-color: beige;
+  width: 527px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 95px;
+}
+.all__contacts {
+  width: 753px;
+}
+.edit__contact {
+  width: 378px;
+  display: flex;
+  flex-direction: column;
+}
+.contact__wrapper {
+  display: flex;
+}
+.icon {
+  width: 99px;
+  height: 90px;
+}
+#form {
+  position: relative;
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.edit__item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.item__picture {
+  width: 43px;
+  height: 35px;
+  margin-right: 35px;
+}
+.contact__person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.create__date {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.contact__data {
+  width: 715px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact__data:hover {
+  border: solid 1px rgb(124, 192, 192);
+  border-radius: 10px;
+}
+.contact__data:active {
+  background-color: rgb(182, 214, 214);
+  border: solid transparent;
+  border-radius: 10px;
+}
+.initials {
+  display: flex;
+}
+.contact__photo {
+  width: 77px;
+  height: 70px;
+}
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mail,
+.about,
+.number,
+.my__email,
+.create__date,
+.edit__mark,
+.contact__status,
+.data__mail {
+  color: #636363;
+}
+a {
+  color: black;
+  cursor: pointer;
+}
+h1,
+a,
+.number,
+.create__date,
+.my__name {
+  font-style: normal;
+  text-decoration: none;
+}
+.calendar,
+.phone__icon {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.surname {
+  padding-left: 7px;
+}
+ul {
+  list-style: none;
+}
+
+/* //MODALWINDOW STYLES// */
+
+dialog {
+  text-align: center;
+  margin: 0 auto;
+}
+.modal {
+  height: 530px;
+  border-style: none;
+  border-radius: 15px;
+  text-align: center;
+  display: block;
+  transform: scale(0.2);
+  opacity: 0;
+  transition: all 0.5s linear;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.modal[open] {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+.modal__inner {
+  padding: 1em 2em;
+}
+.modal::backdrop {
+  background-color: rgb(224, 198, 211);
+  opacity: 0.6;
+}
+.modal__form {
+  margin-top: 30px;
+  width: 596px;
+}
+.modal__add {
+  width: 430px;
+  position: absolute;
+  right: 57px;
+  bottom: 15px;
+}
+.modal__gender {
+  width: 91px;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+}
+.contact__list {
+  overflow: scroll;
+  height: 100vh;
+}
+.gender__lb {
+  display: none;
+}
+#gender-select {
+  cursor: pointer;
+  margin: 10px;
+  height: 42px;
+  background-color: #5abb5e;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 105px;
+ text-align: center;
+}
